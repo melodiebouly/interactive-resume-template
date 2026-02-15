@@ -165,6 +165,16 @@ const TECH_REGISTRY = {
   'LangChain': { color: '#1C3C3C' },
   'Pandas': { color: '#150458' },
   'NumPy': { color: '#013243' },
+  'scikit-learn': { color: '#F7931E' },
+  'XGBoost': { color: '#189FDD' },
+  'MONAI': { color: '#6ABE45' },
+  'MONAILabel': { color: '#6ABE45' },
+  'FLAML': { color: '#E85D2A' },
+  'AutoML': { color: '#4285F4' },
+  'Matplotlib': { color: '#11557C' },
+  'Seaborn': { color: '#4C72B0' },
+  'Plotly': { color: '#3F4F75' },
+  'PyVista': { color: '#2980B9' },
 
   // ===== CMS & Others =====
   'WordPress': { color: '#21759B' },
