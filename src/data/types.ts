@@ -158,7 +158,8 @@ export interface ResumeConfig {
   hobbies?: Hobby[]
   pdf?: {
     label?: LocalizedString
-    path: string
+    /** Single path for all languages, or one path per language (hides button if no PDF for current language) */
+    path: string | LocalizedString
   }
   theme?: {
     preset?: PresetName

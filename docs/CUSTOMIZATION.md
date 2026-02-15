@@ -174,16 +174,24 @@ hobbies: [
 
 ### PDF Download (optional)
 
-Place your PDF in `public/cv/` and add:
+Place your PDF files in `public/cv/` and add:
 
 ```typescript
+// One PDF per language (recommended for multi-language resumes)
+// The download button is hidden if no PDF exists for the current language
 pdf: {
-  label: { en: 'Download PDF', fr: 'Telecharger le PDF' },
+  label: { en: 'Download PDF', fr: 'Télécharger le PDF' },
+  path: { en: '/cv/resume-en.pdf', fr: '/cv/resume-fr.pdf' },
+}
+
+// Or a single PDF for all languages
+pdf: {
+  label: { en: 'Download PDF', fr: 'Télécharger le PDF' },
   path: '/cv/resume.pdf',
 }
 ```
 
-Remove to hide the download button.
+Remove the `pdf` block entirely to hide the download button.
 
 ## Theme
 

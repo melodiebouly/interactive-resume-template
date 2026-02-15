@@ -323,9 +323,11 @@ export const resumeConfig: ResumeConfig = {
   ],
 
   // ===== PDF (optional — place your PDF in public/cv/) =====
+  // Use a string for the same PDF in all languages,
+  // or a LocalizedString for one PDF per language (button is hidden if no PDF for the current language).
   pdf: {
     label: { en: 'Download PDF', fr: 'Télécharger le PDF' },
-    path: '/cv/resume.pdf',
+    path: { en: '/cv/resume-en.pdf', fr: '/cv/resume-fr.pdf' },
   },
 
   // ===== THEME =====
