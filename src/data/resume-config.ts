@@ -235,13 +235,7 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== THEME =====
   theme: {
-    preset: 'ocean',
-    colors: {
-      primary: '#2B7A83',
-      primaryLight: '#5BA8B0',
-      primaryDark: '#3A9DA8',
-      primaryLightDark: '#2B7A83',
-    },
+    preset: 'lilac',
   },
 
   // ===== UI LABELS =====
