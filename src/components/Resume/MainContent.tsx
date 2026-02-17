@@ -35,6 +35,11 @@ export function MainContent() {
         {personal.subtitle && (
           <p className="text-sm text-resume-primary mt-1">{resolve(personal.subtitle)}</p>
         )}
+        {personal.summary && (
+          <p className="text-xs text-resume-text-secondary mt-3 leading-relaxed max-w-2xl mx-auto text-justify">
+            {resolve(personal.summary)}
+          </p>
+        )}
       </div>
 
       {/* Experiences */}

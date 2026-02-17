@@ -7,20 +7,24 @@ export const resumeConfig: ResumeConfig = {
     photo: '/images/photo.jpg',
     photoBackEmoji: '🧠',
     title: {
-      en: 'Data Scientist',
-      fr: 'Data Scientist',
+      en: 'Applied Machine Learning Engineer',
+      fr: 'Ingénieure Machine Learning Appliqué',
     },
     subtitle: {
       en: '4 years of experience',
       fr: '4 ans d\'expérience',
+    },
+    summary: {
+      en: 'Applied ML Engineer with 4 years of experience in deep learning for complex signal and volumetric data processing. Skilled in end-to-end ML pipelines — from data collection strategy and preprocessing to model deployment. Proven ability to adapt ML expertise across domains within multidisciplinary, customer-facing environments.',
+      fr: 'Ingénieure ML Appliqué avec 4 ans d\'expérience en deep learning pour le traitement de signaux complexes et de données volumétriques. Compétente en pipelines ML de bout en bout — de la stratégie de collecte de données au déploiement de modèles. Capacité prouvée à adapter son expertise ML à différents domaines dans des environnements multidisciplinaires orientés client.',
     },
     location: 'Montpellier, France',
   },
 
   // ===== SEO =====
   seo: {
-    title: 'Mélodie Bouly — Data Scientist',
-    description: 'Interactive resume of Mélodie Bouly, Data Scientist specialized in machine and deep learning applied to medical imaging.',
+    title: 'Mélodie Bouly — Applied Machine Learning Engineer',
+    description: 'Interactive resume of Mélodie Bouly, Applied ML Engineer with 4 years of experience in deep learning for complex signal and volumetric data processing.',
   },
 
   // ===== LANGUAGES =====
@@ -38,7 +42,7 @@ export const resumeConfig: ResumeConfig = {
     { type: 'linkedin', label: 'Mélodie Bouly', href: 'https://www.linkedin.com/in/m%C3%A9lodie-bouly-03b8641a3/' },
     { type: 'email', label: 'melodiebouly@gmail.com' },
     { type: 'phone', label: '+33 6 45 74 90 17' },
-    { type: 'location', label: 'Montpellier, France' },
+    { type: 'location', label: 'Montpellier, willing to relocate to Switzerland' },
   ],
 
   // ===== SKILLS =====
@@ -48,60 +52,58 @@ export const resumeConfig: ResumeConfig = {
       type: 'languages',
       items: [
         { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
-        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' } },
+        { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Fluent', fr: 'Courant' } },
         { name: { en: 'German', fr: 'Allemand' }, level: { en: 'B1', fr: 'B1' } },
       ],
     },
     {
-      title: { en: 'Machine Learning', fr: 'Machine Learning' },
-      type: 'badges',
-      items: [
-        { name: 'scikit-learn' },
-        { name: 'XGBoost' },
-        { name: 'FLAML' },
-        { name: 'AutoML' },
-      ],
-    },
-    {
-      title: { en: 'Deep Learning', fr: 'Deep Learning' },
+      title: { en: 'Deep Learning & Signal Processing', fr: 'Deep Learning & Traitement du Signal' },
       type: 'badges',
       items: [
         { name: 'PyTorch' },
         { name: 'TensorFlow' },
-        { name: 'MONAI' },
-        { name: 'MONAILabel' },
+        { name: 'scikit-learn' },
+        { name: 'AutoML' },
       ],
     },
     {
-      title: { en: 'Data & Visualization', fr: 'Données & Visualisation' },
+      title: { en: 'Python & Data Engineering', fr: 'Python & Ingénierie de Données' },
       type: 'badges',
       items: [
         { name: 'Python' },
         { name: 'NumPy' },
         { name: 'Pandas' },
-        { name: 'Matplotlib' },
-        { name: 'Seaborn' },
-        { name: 'Plotly' },
         { name: 'PyVista' },
+        { name: 'Matplotlib' },
       ],
     },
     {
-      title: { en: 'Cloud & DevOps', fr: 'Cloud & DevOps' },
+      title: { en: 'MLOps & Infrastructure', fr: 'MLOps & Infrastructure' },
       type: 'badges',
       items: [
         { name: 'AWS' },
+        { name: 'Docker' },
         { name: 'GitLab CI' },
-        { name: 'Git' },
       ],
     },
     {
-      title: { en: 'Soft Skills', fr: 'Savoir-être' },
+      title: { en: 'Software Engineering', fr: 'Pratiques Logicielles' },
+      type: 'badges',
+      items: [
+        { name: 'Git' },
+        { name: 'pytest' },
+        { name: 'conda' },
+        { name: 'Docker' },
+      ],
+    },
+    {
+      title: { en: 'Personality', fr: 'Personnalité' },
       type: 'text',
       items: [
         {
           name: {
-            en: 'Team spirit, Rigor & attention to detail, Strong willingness to learn, Open-mindedness & adaptability',
-            fr: 'Esprit d\'équipe, Rigueur & souci du détail, Forte volonté d\'apprendre, Ouverture d\'esprit & adaptabilité',
+            en: 'Clear communication, Strong adaptability across domains, Team spirit',
+            fr: 'Communication claire, Forte adaptabilité inter-domaines, Esprit d\'équipe',
           },
         },
       ],
@@ -112,18 +114,18 @@ export const resumeConfig: ResumeConfig = {
   experiences: [
     {
       id: 'simcure-engineer',
-      company: { en: 'SIM&CURE', fr: 'SIM&CURE' },
+      company: { en: 'Sim&Cure', fr: 'Sim&Cure' },
       role: {
         en: 'Junior Data Science Engineer',
         fr: 'Ingénieure Data Science Junior',
       },
       type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: 'Oct 2022 - Present', fr: 'Oct 2022 - Présent' },
+      period: { en: 'Oct 2022 - March 2025', fr: 'Oct 2022 - Mars 2025' },
       description: {
-        en: 'Data Scientist in the R&D department of a medical startup. Developing ML/DL models for intracranial aneurysm detection and segmentation on medical imaging.',
-        fr: 'Data Scientist au sein du département R&D d\'une startup médicale. Développement de modèles ML/DL pour la détection et segmentation d\'anévrismes intracrâniens en imagerie médicale.',
+        en: 'Applied ML Engineer in the R&D department of a medical startup. End-to-end ML/DL pipelines for detection, segmentation and clinical outcome prediction on complex 3D medical data.',
+        fr: 'Ingénieure ML Appliqué au sein du département R&D d\'une startup médicale. Pipelines ML/DL de bout en bout pour la détection, segmentation et prédiction de résultats cliniques sur données médicales 3D complexes.',
       },
-      techs: ['Python', 'PyTorch', 'scikit-learn', 'AWS', 'Pandas', 'NumPy', 'Seaborn', 'PyVista', 'GitLab CI'],
+      techs: ['Python', 'PyTorch', 'TensorFlow', 'scikit-learn', 'AWS', 'Docker', 'Pandas', 'NumPy', 'PyVista', 'GitLab CI'],
       isHighlighted: true,
       details: {
         context: {
@@ -132,40 +134,40 @@ export const resumeConfig: ResumeConfig = {
         },
         tasks: {
           en: [
-            'Independently developed a machine learning model for predicting aneurysm rupture status, based on clinical and morphological features',
-            'Collaboratively developed a two-step deep learning pipeline for detecting intracranial aneurysms on MRA and CTA scans (data cleaning, statistical analysis, network training, model evaluation, hyperparameter optimization)',
-            'Independently developed an annotation initialization plugin for the 3DRA modality as part of a partnership with a consortium of European hospitals, along with a transformer-based model for the segmentation of cerebral arteries and intracranial aneurysms on 3DRA',
-            'Conducted a solo project for analyzing and visualizing usage data from the company\'s flagship software via an API, presenting insights to executives to support decision-making',
-            'Supervised two internships (one Master\'s and one Bachelor\'s student)',
+            'Designed and optimized ML models for clinical outcome prediction from heterogeneous feature sets, including systematic experimentation and performance benchmarking',
+            'Built end-to-end deep learning pipelines for automated detection and localization on complex 3D raw data (MRA, CTA), including data collection strategy, preprocessing, model training, and hyperparameter tuning',
+            'Developed a transformer-based segmentation model for 3D structures, delivered as a production-ready plugin within a European multi-site consortium',
+            'Built a data analytics dashboard via API integration, identifying usage patterns and delivering actionable insights to executives',
+            'Supervised 2 interns (Master\'s and Bachelor\'s level)',
           ],
           fr: [
-            'Développement autonome d\'un modèle de machine learning pour la prédiction du statut de rupture d\'anévrisme, basé sur des caractéristiques cliniques et morphologiques',
-            'Développement collaboratif d\'un pipeline de deep learning en deux étapes pour la détection d\'anévrismes intracrâniens sur des scans ARM et CTA (nettoyage de données, analyse statistique, entraînement réseau, évaluation de modèle, optimisation d\'hyperparamètres)',
-            'Développement autonome d\'un plugin d\'initialisation d\'annotations pour la modalité 3DRA dans le cadre d\'un partenariat avec un consortium d\'hôpitaux européens, avec un modèle à base de transformers pour la segmentation des artères cérébrales et des anévrismes intracrâniens',
-            'Projet solo d\'analyse et de visualisation des données d\'utilisation du logiciel phare de l\'entreprise via une API, présentation des résultats aux dirigeants pour le support à la décision',
-            'Encadrement de deux stages (un étudiant en Master et un en Licence)',
+            'Conception et optimisation de modèles ML pour la prédiction de résultats cliniques à partir d\'ensembles de caractéristiques hétérogènes, incluant expérimentation systématique et benchmarking de performances',
+            'Construction de pipelines de deep learning de bout en bout pour la détection et localisation automatisées sur des données 3D brutes complexes (ARM, CTA), incluant stratégie de collecte de données, prétraitement, entraînement et optimisation d\'hyperparamètres',
+            'Développement d\'un modèle de segmentation basé sur des transformers pour des structures 3D, livré en tant que plugin prêt pour la production au sein d\'un consortium européen multi-sites',
+            'Construction d\'un tableau de bord d\'analyse de données via intégration API, identification de patterns d\'utilisation et présentation d\'insights actionnables aux dirigeants',
+            'Encadrement de 2 stagiaires (niveaux Master et Licence)',
           ],
         },
         env: {
-          en: 'Python / AWS / PyTorch / scikit-learn / Pandas / NumPy / Seaborn / PyVista / CI-CD / GitLab',
-          fr: 'Python / AWS / PyTorch / scikit-learn / Pandas / NumPy / Seaborn / PyVista / CI-CD / GitLab',
+          en: 'Python / AWS / PyTorch / TensorFlow / scikit-learn / Docker / Pandas / NumPy / PyVista / CI-CD / GitLab',
+          fr: 'Python / AWS / PyTorch / TensorFlow / scikit-learn / Docker / Pandas / NumPy / PyVista / CI-CD / GitLab',
         },
       },
     },
     {
       id: 'simcure-apprentice',
-      company: { en: 'SIM&CURE', fr: 'SIM&CURE' },
+      company: { en: 'Sim&Cure', fr: 'Sim&Cure' },
       role: {
-        en: 'Data Scientist (Work-Study)',
-        fr: 'Data Scientist en apprentissage',
+        en: 'Data Science Apprentice',
+        fr: 'Apprentie Data Science',
       },
       type: { en: 'Apprenticeship', fr: 'Alternance' },
-      period: { en: 'Sept 2020 - Oct 2022', fr: 'Sept 2020 - Oct 2022' },
+      period: { en: 'Oct 2020 - Sept 2022', fr: 'Oct 2020 - Sept 2022' },
       description: {
-        en: 'Data Scientist apprentice during a Master\'s work-study program in the R&D department. Data engineering and ML model development for medical imaging.',
-        fr: 'Data Scientist en alternance dans le cadre d\'un Master. Ingénierie de données et développement de modèles ML pour l\'imagerie médicale.',
+        en: 'Developed and deployed a production ML model integrated into commercial software for automated 3D reconstruction — model still in use. Defined data collection strategies in collaboration with domain experts to build robust, high-quality training datasets.',
+        fr: 'Développement et déploiement d\'un modèle ML en production intégré dans un logiciel commercial pour la reconstruction 3D automatisée — modèle toujours en usage. Définition de stratégies de collecte de données en collaboration avec des experts métier pour constituer des datasets d\'entraînement robustes et de haute qualité.',
       },
-      techs: ['Python', 'PyTorch', 'scikit-learn', 'AWS', 'Pandas', 'NumPy', 'Seaborn', 'PyVista'],
+      techs: ['Python', 'PyTorch', 'scikit-learn', 'AWS', 'Pandas', 'NumPy', 'PyVista'],
       details: {
         context: {
           en: 'Data Scientist apprentice during a Master\'s work-study program, part of a 3-person team within the Research & Development department of a 30-person startup.',
@@ -173,21 +175,21 @@ export const resumeConfig: ResumeConfig = {
         },
         tasks: {
           en: [
+            'Developed and deployed a production ML model integrated into commercial software for automated 3D reconstruction',
+            'Defined data collection strategies in collaboration with domain experts to build robust, high-quality training datasets',
             'Performed data engineering on complex medical datasets',
-            'Developed and evaluated a machine learning model deployed in the company\'s software to automate an arterial reconstruction task',
             'Collected data in hospitals and collaborated with physicians',
-            'Conducted data visualization and analysis',
           ],
           fr: [
+            'Développement et déploiement d\'un modèle ML en production intégré dans un logiciel commercial pour la reconstruction 3D automatisée',
+            'Définition de stratégies de collecte de données en collaboration avec des experts métier pour constituer des datasets d\'entraînement robustes',
             'Ingénierie de données sur des jeux de données médicales complexes',
-            'Développement et évaluation d\'un modèle de machine learning déployé dans le logiciel de l\'entreprise pour automatiser une tâche de reconstruction artérielle',
             'Collecte de données en milieu hospitalier et collaboration avec des médecins',
-            'Visualisation et analyse de données',
           ],
         },
         env: {
-          en: 'Python / AWS / PyTorch / scikit-learn / Pandas / NumPy / Seaborn / PyVista',
-          fr: 'Python / AWS / PyTorch / scikit-learn / Pandas / NumPy / Seaborn / PyVista',
+          en: 'Python / AWS / PyTorch / scikit-learn / Pandas / NumPy / PyVista',
+          fr: 'Python / AWS / PyTorch / scikit-learn / Pandas / NumPy / PyVista',
         },
       },
     },
@@ -197,14 +199,14 @@ export const resumeConfig: ResumeConfig = {
   education: [
     {
       school: { en: 'University of Montpellier', fr: 'Université de Montpellier' },
-      degree: { en: 'Master\'s Degree in Data Science', fr: 'Master Data Science' },
-      specialty: { en: 'Work-Study Program', fr: 'Alternance' },
+      degree: { en: 'Master\'s Degree in Data Science (MIASHS)', fr: 'Master Data Science (MIASHS)' },
+      specialty: { en: 'Data Visualisation, Computer Vision, Machine Learning, Deep Learning, Parallel Computing, Advanced Statistics', fr: 'Visualisation de données, Vision par ordinateur, Machine Learning, Deep Learning, Calcul parallèle, Statistiques avancées' },
       period: '2020 - 2022',
     },
     {
       school: { en: 'University of Montpellier', fr: 'Université de Montpellier' },
       degree: { en: 'Bachelor\'s Degree in Computer Science', fr: 'Licence Informatique' },
-      period: '2017 - 2020',
+      period: '2018 - 2020',
     },
   ],
 

@@ -193,6 +193,10 @@ const TECH_REGISTRY = {
   'JSP': { color: '#007396' },
   'JSF': { color: '#007396' },
   'jQuery': { color: '#0769AD' },
+
+  // ===== Python Ecosystem =====
+  'pytest': { color: '#0A9EDC' },
+  'conda': { color: '#44A833' },
 } as const satisfies Record<string, { color: string }>
 
 export type TechName = keyof typeof TECH_REGISTRY
