@@ -272,4 +272,10 @@ seo: {
 }
 ```
 
-Update `index.html` directly with these values for best SEO results.
+At build time, a Vite plugin (`vite-plugin-resume-seo`) automatically reads your config and injects into the static HTML:
+
+- **`<title>`** and **`<meta description>`** with your `seo` values
+- **JSON-LD** structured data ([schema.org/Person](https://schema.org/Person)) with your name, job title, email, social links, and skills
+- **`<noscript>` fallback** with the complete CV in semantic HTML (contact, skills, experiences, education, projects, hobbies)
+
+This means crawlers, search engines, and ATS bots see your full resume content **without executing JavaScript**. No extra configuration needed — just fill in your `seo` fields and the plugin handles the rest.

@@ -19,7 +19,8 @@ Built with React, TypeScript, Tailwind CSS, and Framer Motion.
 - **Responsive** — Mobile-first, works on all screen sizes
 - **Expandable experiences** — Click to expand details (inline on desktop, modal on mobile)
 - **Projects section** — Optional portfolio showcase
-- **PDF download** — Optional downloadable resume
+- **PDF download** — Optional downloadable resume, one per language
+- **SEO & ATS ready** — Full CV content visible to crawlers at build time (JSON-LD, semantic HTML fallback)
 - **3D photo flip** — Click the photo for a fun easter egg
 
 ## Quick Start
@@ -84,6 +85,7 @@ theme: {
 ## Project Structure
 
 ```
+├── vite-plugin-resume-seo.ts       # Build-time SEO injection plugin
 src/
 ├── data/
 │   ├── resume-config.ts          # YOUR CONFIG FILE (edit this!)
@@ -108,6 +110,21 @@ It lets you click on any element, select text, or annotate parts of your resume,
 Agentation is **only active in development** and is automatically stripped from production builds.
 
 > See the [Agentation documentation](https://agentation.dev/features) for more details.
+
+## ATS & SEO
+
+**"Is it ATS-compatible?"** — ATS (Applicant Tracking Systems) today primarily parse PDF and DOCX files. This interactive resume is designed as a **complement** to your PDF, not a replacement.
+
+However, the template does everything possible to make your CV readable by bots and crawlers **without JavaScript**:
+
+- **Build-time SEO injection** — A custom Vite plugin reads your config at build time and injects all data directly into the static HTML. Crawlers see the full CV, not an empty `<div id="root">`
+- **JSON-LD structured data** — Your name, job title, skills, and links are embedded as [schema.org/Person](https://schema.org/Person) metadata in the `<head>`, readable by search engines and modern parsers
+- **`<noscript>` semantic HTML** — The complete CV (contact, skills, experiences with tasks, education, projects, hobbies) is rendered as clean HTML inside `<noscript>`, so non-JS visitors and bots see everything
+- **Static meta tags** — `<title>` and `<meta description>` are set from your config at build time
+- **Shareable URL** — Send `?lang=en` directly to recruiters for the right language
+- **PDF download** — Per-language PDF files for traditional ATS submissions
+
+**Recommended workflow:** Apply with your PDF, and add the interactive link in your email or LinkedIn message.
 
 ## Contributing
 

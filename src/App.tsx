@@ -10,6 +10,11 @@ const Agentation = lazy(() =>
   import('agentation').then((m) => ({ default: m.Agentation }))
 )
 
+/**
+ * Sets document title and meta description at runtime.
+ * JSON-LD structured data and noscript fallback are injected at build time
+ * by the vite-plugin-resume-seo plugin.
+ */
 function SeoHead() {
   useEffect(() => {
     const { title, description } = resumeConfig.seo
